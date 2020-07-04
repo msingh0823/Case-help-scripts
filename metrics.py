@@ -17,3 +17,5 @@ for metric in metrics:
         w = csv.DictWriter(f,metric.json().keys())
         w.writerow(metric.json())
 f.close()
+
+# Usage python metrics.py <Controller IP> <username> <Password> <limit> <step> <list of metrics ',' seperated>"
