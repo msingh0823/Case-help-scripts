@@ -74,10 +74,11 @@ def main():
     pool_list,pool_obj_list = get_pool_list(api, api_version)
     job_list = get_job_list(api, api_version)
     for pool_obj in pool_obj_list:
-        if not pool_obj['uuid'] in job_list:
+        if pool_obj['uuid'] in job_list:
 		print("Pool %s doesn't have a matching job for DNS resolution" %(pool_obj['name']))
-		if pool_obj['enabled'] == True and flag == True
-	    		api.put_by_name('pool',pool_obj['name'],pool_obj)
+		if pool_obj['enabled'] == True and flag == True:
+	    		resp = api.put_by_name('pool',pool_obj['name'],pool_obj)
+			print("Dummy PUT result is %s for pool %s"  %(resp.status_code,pool_obj['name']))
 
 if __name__ == "__main__": 
     main()
