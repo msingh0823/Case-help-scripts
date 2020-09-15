@@ -56,7 +56,7 @@ def orphan_vsvip(api,api_version,flag):
 
 def main():
     #Getting Required Args
-    parser = argparse.ArgumentParser(description="AVISDK based Script to perform a dummy PUT on pools with members rresolved by name")
+    parser = argparse.ArgumentParser(description="AVISDK based Script to perform List/Delete operation on orphan vsvip")
     parser.add_argument("-u", "--username", required=True, help="Login username")
     parser.add_argument("-p", "--password", required=True, help="Login password")
     parser.add_argument("-c", "--controller", required=True, help="Controller IP address")
