@@ -1,3 +1,5 @@
+# Author: Manmeet Singh
+
 #!/usr/bin/env python
 
 from avi.sdk.avi_api import ApiSession
@@ -74,13 +76,6 @@ def enable_disable_vs():
         time.sleep(1)
 
     print "All the Vses have been Disabled/Enabled Successfully\n"        
-
-
-
-
-
-
-
 
 if __name__ == '__main__':
     enable_disable_vs()
