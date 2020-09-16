@@ -1,5 +1,7 @@
 # Author: Manmeet Singh
-#!/usr/
+
+#!/usr/bin/env python
+
 from avi.sdk.avi_api import ApiSession
 session = ApiSession('10.79.111.0', 'admin', 'Avi12345!', api_version = '18.2.6')
 session.tenant='*'
