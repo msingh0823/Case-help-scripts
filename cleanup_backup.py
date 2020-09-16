@@ -1,5 +1,5 @@
 #Author: Manmeet Singh
-#!/bin/bash/python
+#!/usr/bin/env python
 
 import sys, os, django
 
