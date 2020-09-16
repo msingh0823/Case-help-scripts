@@ -1,3 +1,6 @@
+#Author: Manmeet Singh
+#!/bin/bash/python
+
 import sys, os, django
 
 sys.path.append('/opt/avi/python/bin/portal')
